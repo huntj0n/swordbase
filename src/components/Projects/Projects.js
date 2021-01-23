@@ -3,8 +3,8 @@ import './Projects.scss';
 
 const Projects = () => {
     return (
-        <div className='projects'>
-            
+        <div className="projects">
+            These projects are so projecty
         </div>
     )
 }

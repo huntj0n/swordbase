@@ -1,8 +1,10 @@
 import React from 'react';
 import './About.scss';
+import Competencies from './Competencies';
 
 const About = () => {
     return (
+        <>
         <div className='about'>
             <div className="container">
                 <div className="row">
@@ -21,6 +23,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Competencies />
+        </>
     )
 }
 
