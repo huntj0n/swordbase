@@ -12,6 +12,7 @@ nav {
 
     @include media('<=phone'){
         height: 56px;
+        
     }
 
     .logo {
@@ -28,7 +29,7 @@ nav {
             }
             span {
                 margin-bottom: 0.3rem;
-                background: $black;
+                background: $white;
                 height: 2px;
                 width: 100%;
                 display: block;
@@ -37,12 +38,13 @@ nav {
         }
         &:hover {
             span {
-                background: $lightred;
+                background: $darkred;
                 cursor: pointer;
             }
         }
         .name{
             margin: 1em;
+            color: $darkred;
         }
     }
     
@@ -56,10 +58,11 @@ nav {
         
         .MuiSvgIcon-root {
             margin: 15px;
+            color: $white;
             transition: 0.4s ease-in-out;
 
             &:hover{
-                color: $lightred;
+                color: $darkred;
                 transform: scale(1.2);
                 cursor: pointer;
             }
