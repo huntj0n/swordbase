@@ -48,7 +48,7 @@
                 font-size: 16px;
 
                 &::placeholder {
-                    color: white;
+                    color: $lightgray;
                 }
                 &:focus {
                     outline-color: $lightred !important;

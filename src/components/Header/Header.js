@@ -7,20 +7,17 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const Header = () => {
     return (
         <header>
-            <div className="logo">
-                <div className="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div className="name">
+            <div className="container">
+                <div className="logo">
                     JH.
                 </div>
-            </div>
 
-            <div className="external">
-                <GitHubIcon />
-                <LinkedInIcon />
+                <div className="external">
+                    <a href="#">Work</a>
+                    <a href="#">About</a>
+                    <GitHubIcon />
+                    <LinkedInIcon />
+                </div>
             </div>
         </header>
     )

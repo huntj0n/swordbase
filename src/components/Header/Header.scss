@@ -3,70 +3,69 @@
 header {
     // background-color: $darkred;
     position: fixed;
-    height: 75px;
+    height: 150px;
     width: 100vw;
     z-index: 4;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     @include media('<=phone'){
-        height: 56px;
+        height: 75px;
         
     }
 
-    .logo {
-        // background-color: $tan;
-        height: 100%;
+    .container {
+        // background-color: tomato;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        .menu {
-            width: 25px;
-            margin: 30px 10px 30px 30px;
-            @include media('<=phone'){
-                width: 20px;
-            }
-            span {
-                margin-bottom: 0.3rem;
-                background: $white;
-                height: 2px;
-                width: 100%;
-                display: block;
+        justify-content: space-between;
+
+        .logo {
+            margin: 0 30px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5rem;
+            color: $black;
+            mix-blend-mode: difference;
+
+        }
+
+        .external {
+            // background-color: $tan;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-right: 15px;
+            mix-blend-mode: difference;
+
+            a {
+                margin: 15px;
+                text-decoration: none;
+                color: $black;
                 transition: 0.4s ease-in-out;
-            }
-        }
-        &:hover {
-            span {
-                background: $darkred;
-                cursor: pointer;
-            }
-        }
-        .name{
-            margin: 1em;
-            color: $darkred;
-        }
-    }
-    
-    .external {
-        // background-color: $tan;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-right: 15px;
-        
-        .MuiSvgIcon-root {
-            margin: 15px;
-            color: $white;
-            transition: 0.4s ease-in-out;
 
-            &:hover{
-                color: $darkred;
-                transform: scale(1.2);
-                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                    opacity: 1.5;
+                }
             }
+            
+            .MuiSvgIcon-root {
+                margin: 0 15px;
+                padding-bottom: 5px;
+                color: $black;
+                transition: 0.4s ease-in-out;
+    
+                &:hover{
+                    // color: $darkred;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+            
         }
-        
     }
 }

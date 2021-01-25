@@ -6,7 +6,7 @@ const Contact = () => {
         <div className='contact'>
             <div className="container">
                 <div className="row">
-                    <h1>Contact Me <span>.</span></h1>
+                    <h1>Connect With Me <span>.</span></h1>
                     
                     <div className="contact__info">
                         <p>Name:</p>
