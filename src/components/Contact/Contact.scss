@@ -1,77 +1,113 @@
 @import '../../Variables.scss';
 
 .contact {
-    // height: 90vh;
-    width: 100vw;
-    background-color: $lightgray;
-    padding: 75px 0;
-    
-    .row {
+    // height: 60vh;
+    background-color: $mediumgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+
+    h1 {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 3rem;
+        font-weight: 300;
+        color: $white;
+    }
+
+    .contact__Box {
+        // background-color: tomato;
+        height: 250px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        color: $darkgray;
+        justify-content: space-around;
+        position: relative;
 
-        h1 {
-            font-weight: 700;
-            font-size: 48px;
-            margin-bottom: 50px;
-
-            span {
-                color: $darkred;
-                font-size: larger;
-                position: relative;
-                right: 10px;
-            }   
-        }
-        .contact__info {
+        .contact__Info {
+            // background-color: $tan;
+            height: 100%;
+            width: 40%;
             display: flex;
             flex-direction: column;
-            font-weight: 300;
+            align-items: left;
+            justify-content: space-between;
+        }
+        .contact__Message {
+            // background-color: lavender;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-between;
+        }
+        p {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            margin-top: 10px;
 
-            p {
-                text-transform: uppercase;
-                font-size: 14px;
-                margin-bottom: 5px;
+            span {
+                font-size: smaller;
+                color: $lightgray;
             }
-            input, textarea {
-                width: 500px;
-                border: none;
-                border-radius: 5px;
-                padding: 15px;
-                background-color: $mediumgray;
-                margin-bottom: 20px;
-                font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-                "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-                "Helvetica Neue", sans-serif;
-                font-size: 16px;
+        }
+        input, textarea {
+            outline: none;
+            background: none;
+            border: none;
+            border-radius: none;
+            color: $white;
+            border-bottom: 1px solid $white;
+            color: $white;
+            font-size: 1.1rem;
+        }
+        input {
+            height: 40px;
+            // background-color: green;
+            padding-bottom: 5px;
+        }
+        textarea {
+            margin-top: 20px;
+            resize: none;
+        }
+    }
+    .contact__Submit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        button {
+            position: relative;
+            right: 10%;
+            top: 15px;
+            margin: 2% 0;
 
-                &::placeholder {
-                    color: $lightgray;
-                }
-                &:focus {
-                    outline-color: $lightred !important;
-                }
-            }
-            button {
-                cursor: pointer;
-                margin-top: 40px;
-                outline: none;
-                border: none;
-                border-radius: 5px;
-                padding: 10px;
-                background-color: $darkred; 
-                color: white;  
-                text-transform: uppercase;
-                font-weight: 500; 
-                transition: .4s;
-
-                &:hover {
-                    color: $darkgray;
-                    opacity: 5;
-                }
-            }
+            border: none;
+            background: none;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: .6rem;
         }
     }
 }
+
+
+//         input, textarea {
+//             width: 500px;
+//             border: none;
+//             border-radius: 5px;
+//             padding: 15px;
+//             background-color: $mediumgray;
+//             margin-bottom: 20px;
+
+//             &::placeholder {
+//                 color: $lightgray;
+//             }
+//             &:focus {
+//                 outline-color: $lightred !important;
+//             }
