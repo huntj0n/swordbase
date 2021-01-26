@@ -3,5 +3,7 @@
 .projects {
     height: 90vh;
     width: 100vw;
-    background-color: $black;
+    background-color: $white;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
 }

@@ -17,7 +17,7 @@ const Contact = () => {
                     </div>
                     <div className="contact__Message">
                         <p>Brief Message...</p>
-                        <textarea type="text" rows style={{height: '90%', marginTop: '-15px',}}/>
+                        <textarea type="text" rows style={{height: '85%', marginTop: '-15px',}}/>
                     </div> 
                     
                 </div>

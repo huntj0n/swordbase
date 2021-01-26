@@ -15,6 +15,7 @@ const Header = () => {
                 <div className="external">
                     <a href="#">Work</a>
                     <a href="#">About</a>
+                    <a href="#">Contact</a>
                     <GitHubIcon />
                     <LinkedInIcon />
                 </div>

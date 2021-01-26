@@ -20,7 +20,8 @@
     .contact__Box {
         // background-color: tomato;
         height: 250px;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -91,7 +92,15 @@
             background: none;
             color: $white;
             text-transform: uppercase;
-            letter-spacing: .6rem;
+            letter-spacing: .3rem;
+            transition: .4s ease-out;
+            text-align: center;
+            padding: 5px;
+
+            &:hover {
+                cursor: pointer;
+
+            }
         }
     }
 }
