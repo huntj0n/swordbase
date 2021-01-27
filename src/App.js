@@ -5,6 +5,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Nav from './components/Nav/Nav';
 import Projects from './components/Projects/Projects';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <About />
       <Contact />
       <Footer />
+
+      <Nav />
     </div>
   );
 }
