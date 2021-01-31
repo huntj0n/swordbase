@@ -1,7 +1,6 @@
 @import '../../Variables.scss';
 
 .intro {
-    background: $black;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,30 +11,49 @@
     justify-content: center;
 
     .intro__text {
-        color: $white;
-        font-size: 2rem;
+        color:$white;
 
         .hide {
             background: $black;
+            color: $white;
+            font-size: 3rem;
             overflow: hidden;
 
             span {
-                transform: translateY(100%);
                 display: inline-block;
             }
         }
     }
 
-    .intro__textSlider {
-        background: $lightgray;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+    .intro__slider {
+        position: absolute;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(100%);
+        width: calc(100vw / 3);
+        background-color: $black;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        @include media("<=tablet"){
+            width: 100vw;
+        }
+
+        &:nth-child(2){
+            left: calc(100vw / 3);
+            // background-color: orange;
+
+            @include media("<=tablet"){
+                display: none;
+            }
+        }
+
+        &:nth-child(3){
+            left: calc((100vw / 3) * 2);
+            // background-color: pink;
+
+            @include media("<=tablet"){
+                display: none;
+            }
+        }
     }
 }
