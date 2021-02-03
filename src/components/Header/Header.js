@@ -16,7 +16,7 @@ const Header = () => {
                     <a href="#">Work</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
-                    <GitHubIcon />
+                    {/* <GitHubIcon /> */}
                     <LinkedInIcon />
                 </div>
             </div>

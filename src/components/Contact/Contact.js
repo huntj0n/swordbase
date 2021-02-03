@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.scss';
 
+import {ReactComponent as RightArrow} from '../../assets/rightArrow.svg';
+
 const Contact = () => {
     return (
         <div className='contact'>
@@ -22,7 +24,7 @@ const Contact = () => {
                     
                 </div>
                 <div className="contact__Submit">
-                    <button>Send</button>
+                    <button>Send <RightArrow className='submitArrow' /> </button>
                 </div>
             </div>
         </div>

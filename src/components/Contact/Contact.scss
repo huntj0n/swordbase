@@ -84,7 +84,7 @@
         
         button {
             position: relative;
-            right: 10%;
+            right: 15%;
             top: 15px;
             margin: 2% 0;
 
@@ -96,6 +96,10 @@
             transition: .4s ease-out;
             text-align: center;
             padding: 5px;
+
+            svg {
+                fill: $white;
+            }
 
             &:hover {
                 cursor: pointer;
