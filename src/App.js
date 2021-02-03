@@ -19,11 +19,12 @@ function App() {
 
     //gsap timeline
     const tl = gsap.timeline()
-    .from('.text', 1.8, {
+    .from('.text', 1.7, {
       y: 100,
       ease: 'power4.out',
       opacity: 0,
       delay: 1,
+      skewY: 5,
       stagger: {amount: 0.3}
     })
     .to('.text', {opacity: 0, delay: .7})
@@ -35,14 +36,23 @@ function App() {
       stagger: 0.4
     })
     .to('.intro', {css: {display: 'none'}})
-    .to('.card__slider', 1.5, {
+    .to('.card__slider', 2, {
+      scrollTrigger: '.card',
       width: 0,
       ease: 'ease.inOut',
-      delay: 5,
+      delay: 0,
       stagger: {
-        amound: 0.3
+        amound: 0.5
       }
     })
+    // .to('.card__slider', 1.5, {
+    //   width: 0,
+    //   ease: 'ease.inOut',
+    //   delay: 2,
+    //   stagger: {
+    //     amound: 0.5
+    //   }
+    // })
   }, [])
 
   return (
