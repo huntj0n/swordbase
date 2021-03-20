@@ -45,14 +45,6 @@ function App() {
         amound: 0.5
       }
     })
-    // .to('.card__slider', 1.5, {
-    //   width: 0,
-    //   ease: 'ease.inOut',
-    //   delay: 2,
-    //   stagger: {
-    //     amound: 0.5
-    //   }
-    // })
   }, [])
 
   return (

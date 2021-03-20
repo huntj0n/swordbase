@@ -17,66 +17,141 @@
         color: $white;
     }
 
-    .contact__Box {
+    .contact__box {
         // background-color: tomato;
         height: 250px;
         width: 80%;
         margin: 0 auto;
+        padding: 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         position: relative;
 
-        .contact__Info {
-            // background-color: $tan;
+        .contact__boxColumn {
+            // background-color: peru;
             height: 100%;
-            width: 40%;
+            width: 45%;
             display: flex;
             flex-direction: column;
-            align-items: left;
             justify-content: space-between;
+            align-items: center;
+            margin: 0;
         }
-        .contact__Message {
-            // background-color: lavender;
+        input {
+            border: none;
+            background: none;
+            width: 100%;
             height: 100%;
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: space-between;
+            padding-top: 20px;
+            outline: none;
         }
-        p {
-            color: $white;
+        label {
             text-transform: uppercase;
+            color: $white;
             font-size: 0.8rem;
-            margin-bottom: 0;
-            margin-top: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
 
-            span {
+            &::after {
+                content: '';
+            }
+        }
+
+        .form {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 50px;
+                padding-top: 20px;
+                color: $white;
+                font-size: 1.3rem;
+            }
+
+            label {
+                position: absolute;
+                bottom: 0px;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                border-bottom: 1px solid $white;
+            }
+
+            .content-name {
+                position: absolute;
+                bottom: 5px;
+                left: 0px;
+                transition: all 0.3s ease;
+                color: $white;
+            }
+
+            input:focus + .label-name .content-name {
+                transform: translateY(-150%);
+                // font-size: 0.5rem;
+            }
+
+            .subtext {
                 font-size: smaller;
                 color: $lightgray;
             }
         }
-        input, textarea {
-            outline: none;
-            background: none;
-            border: none;
-            border-radius: none;
-            color: $white;
-            border-bottom: 1px solid $white;
-            color: $white;
-            font-size: 1.1rem;
+        
+        .message {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            textarea {
+                width: 100%;
+                height: 100%;
+                color: $white;
+                font-size: 1.3rem;
+                border: none;
+                background: none;
+                outline: none;
+                resize: none;
+                padding-top: 20px; 
+
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-align: start;
+                white-space: pre-wrap;
+                column-count: initial !important;
+                flex-direction: column;
+            }
+            
+            label {
+                // top: 100%;
+                position: absolute;
+                pointer-events: none;
+            }
+            .content-message {
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                transition: all 0.3s ease;
+                color: $white;
+            }
+
+            textarea:focus + .label-name .content-message {
+                transform: translateY(-150%);
+                // font-size: 0.5rem;
+            }
         }
-        input {
-            height: 40px;
-            // background-color: green;
-            padding-bottom: 5px;
-        }
-        textarea {
-            margin-top: 20px;
-            resize: none;
-        }
-    }
+        
+}
+    
+       
     .contact__Submit {
         display: flex;
         align-items: center;
@@ -108,19 +183,3 @@
         }
     }
 }
-
-
-//         input, textarea {
-//             width: 500px;
-//             border: none;
-//             border-radius: 5px;
-//             padding: 15px;
-//             background-color: $mediumgray;
-//             margin-bottom: 20px;
-
-//             &::placeholder {
-//                 color: $lightgray;
-//             }
-//             &:focus {
-//                 outline-color: $lightred !important;
-//             }
